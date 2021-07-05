@@ -1,0 +1,1 @@
+export const POSTS_FOLDER_NAME = 'posts'
