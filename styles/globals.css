@@ -78,6 +78,7 @@ header a {
 }
 
 .card {
+  position: relative;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -116,4 +117,17 @@ ol {
   .posts {
     grid-template-columns: 1fr;
   }
+}
+
+.card-image-container {
+  width: 100%;
+}
+.card-image-container > div {
+  position: unset !important;
+}
+.card-image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
 }

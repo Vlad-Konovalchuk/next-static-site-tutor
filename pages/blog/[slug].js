@@ -17,12 +17,14 @@ const PostPage = ({
       <div className='card card-page'>
         <h1 className='post-title'>{title}</h1>
         <div className='post-date'>Posted on {date}</div>
-        <Image
-          layout='fill'
-          objectFit='cover'
-          src={cover_image}
-          alt='Post cover image'
-        />
+        <div className={'card-image-container'}>
+          <Image
+            alt='Post cover image'
+            src={cover_image}
+            layout='fill'
+            className={'card-image'}
+          />
+        </div>
         <div className='post-body'>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
